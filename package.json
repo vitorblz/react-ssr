@@ -1,0 +1,23 @@
+{
+  "name": "babel-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "npm run build && nodemon dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "express": "^4.16.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0"
+  }
+}
